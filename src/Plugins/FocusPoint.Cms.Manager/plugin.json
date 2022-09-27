@@ -1,0 +1,11 @@
+﻿{
+  "Group": "FocusPoint",
+  "FriendlyName": "Awasome CMS Manager",
+  "SystemName": "FocusPoint.Cms.Manager",
+  "Version": "1.00",
+  "SupportedVersions": [ "4.50" ],
+  "Author": "BULENT AKDUMAN",
+  "DisplayOrder": 1,
+  "FileName": "FocusPoint.Cms.Managers.dll",
+  "Description": "This plugin allows you to create new pages"
+}
