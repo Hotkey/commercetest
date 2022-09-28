@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using FocusPoint.Cms.Manager.Models;
+using Microsoft.AspNetCore.Mvc;
 using Nop.Web.Areas.Admin.Controllers;
 using Nop.Web.Framework.Controllers;
 using Nop.Web.Framework.Mvc.Filters;
@@ -27,6 +28,15 @@ namespace FocusPoint.Cms.Manager.Controllers
             var products = await _productService.GetAllProductsDisplayedOnHomepageAsync();
             return Json(products);
         }
+
+        [Obsolete]
+        public async Task<IActionResult> DesignCreator()
+        {
+            var model = new DesignCreatorMasterModel();
+
+            return View("~/Plugins/FocusPoint.Cms.Manager/Views/CmsAdmin/DesignCreator.cshtml", model);
+        }
+
         #endregion
     }
 }
